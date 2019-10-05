@@ -8,7 +8,7 @@
     "test": "NODE_ENV=test jest --watch",
     "build": "webpack --mode production",
     "predeploy": "cd site && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d site/build"
   },
   "keywords": [],
   "author": "",
