@@ -2,7 +2,9 @@
   "name": "library-study",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
+  "jsnext:main": "dist/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "test": "NODE_ENV=test jest --watch",
@@ -35,8 +37,7 @@
     "style-loader": "^1.0.0",
     "sugarss": "^2.0.0",
     "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {
     "react": "^16.10.1",

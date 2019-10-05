@@ -1,6 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "bundle.js",
+    path: __dirname + "/dist",
+    libraryTarget: "umd"
+  },
   module: {
     rules: [
       {
@@ -31,11 +37,11 @@ module.exports = {
         ]
       }
     ]
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
-    })
-  ]
+  }
+  // plugins: [
+  //   new HtmlWebPackPlugin({
+  //     template: "./src/index.html",
+  //     filename: "./index.html"
+  //   })
+  // ]
 };

@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// export { default } from "./Component";
 import Component from "./Component";
-
-ReactDOM.render(<Component />, document.getElementById("root"));
+export default Component;

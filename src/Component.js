@@ -7,7 +7,7 @@ export default function LibraryStudy({ className }) {
 
   return (
     <div className={classNames}>
-      <p>Library Study</p>
+      <p>This is the Component that I want to publish on NPM.</p>
     </div>
   );
 }
