@@ -7,9 +7,12 @@
     "start": "webpack --watch --mode development",
     "test": "NODE_ENV=test jest --watch",
     "build": "webpack --mode production",
-    "predeploy": "cd site && npm install && npm run build",
+    "predeploy": "npm run build && cd site && npm install && npm run build",
     "deploy": "gh-pages -d site/build"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
