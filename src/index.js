@@ -1,13 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import style from "./index.css";
+import Component from "./Component";
 
-export default function LibraryStudy() {
-  return (
-    <div className={style.container}>
-      <p>Library Study</p>
-    </div>
-  );
-}
-
-ReactDOM.render(<LibraryStudy />, document.getElementById("root"));
+ReactDOM.render(<Component />, document.getElementById("root"));
