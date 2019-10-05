@@ -4,7 +4,6 @@
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
     "test": "NODE_ENV=test jest --watch",
     "build": "webpack --mode production"
   },
